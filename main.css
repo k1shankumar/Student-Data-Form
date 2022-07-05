@@ -2,23 +2,67 @@
     background-color: rgba(255, 255, 255, 0.5);;
     overflow: hidden;
     border-radius: 25px;
+    margin-top: 30px;
+    max-width: 90%;
+    position: relative;
+    margin-left:5%;
+    
 }
 
 .topnav a {
     float: left;
-    color: #332059;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
     font-family: Helvetica;
     font-weight:bold;
-  }
 
+  }
+ 
   body {
-    background-image: url("./images/bg_img.jpg");
-    background-size:cover;
+    background-color: black;
    }
 
 
- 
+  
+   .home_image {
+     width: 50%;
+     height: 550px;
+     background: url(/images/home_img.jpg)
+     no-repeat center / cover ;
+     float: left;
+     margin-left: 45%;
+     margin-top: 3%;
+
+   }
+
+#log_btn {
+  position: absolute;
+  left: 10%;
+  top:78%;
+  background-color:blue;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  
+}
+
+#reg_btn{
+  position: absolute;
+  left: 17%;
+  top:78%;
+  background-color:black;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+}
+
+   
