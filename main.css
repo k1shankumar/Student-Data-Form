@@ -1,68 +1,47 @@
-.topnav {
-    background-color: rgba(255, 255, 255, 0.5);;
-    overflow: hidden;
-    border-radius: 25px;
-    margin-top: 30px;
-    max-width: 90%;
-    position: relative;
-    margin-left:5%;
-    
+body, html {
+    height: 100%;
 }
 
-.topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Helvetica;
-    font-weight:bold;
+.hero-image {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/home_img.jpg");
 
-  }
+  height: 100%;
+
  
-  body {
-    background-color: black;
-   }
-
-
-  
-   .home_image {
-     width: 50%;
-     height: 550px;
-     background: url(/images/home_img.jpg)
-     no-repeat center / cover ;
-     float: left;
-     margin-left: 45%;
-     margin-top: 3%;
-
-   }
-
-#log_btn {
-  position: absolute;
-  left: 10%;
-  top:78%;
-  background-color:blue;
-  border: 2px solid white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 50px;
-  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-#reg_btn{
-  position: absolute;
-  left: 17%;
-  top:78%;
-  background-color:black;
-  border: 2px solid white;
-  padding: 10px 20px;
+.hero-text {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-   
+#logbtn{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+#regbtn{
+    background-color:transparent;
+    color: white;
+    border: 2px solid #4CAF50; 
+    padding: 11px 20px;
+    font-size: 16px;
+
+}
