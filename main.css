@@ -169,3 +169,68 @@ margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.user-form{
+   
+  color:#ea2258;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#marks-box-ex{
+  position: relative;
+  display:inline-block;
+  max-width: 70px;
+  min-height: 20px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  
+  
+}
+
+#marks-box-ia{
+  position: relative;
+  display:inline-block;
+  max-width: 70px;
+  min-height: 20px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+
+.left-four{
+  display: inline-block;
+  left: 1170px;
+  top: 150px;
+  position: relative;
+  
+  width: 100px;
+
+  
+  
+}
+
+.right-four{
+  position: relative;
+  top: 150px;
+  left:1200px;
+  display: inline-block;
+  width: 100px;
+  
+        
+}
+
+.submit-form{
+  width: 200px;
+  align-self: center; 
+  position: relative;
+  background-color: #ea2258; 
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  text-align: center;
+  margin-top:160px;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-left: 1178px;
+  border-radius: 20px;
+}
