@@ -238,6 +238,13 @@ margin-bottom: 10px;
 .title-pro{
   color: #e6e7dd;
   position: absolute;
-  margin-top: 8%;
-  margin-left: 8%;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 6%;
+}
+
+.pro-front{
+  position:absolute;
+  margin-top: 10%;
+  margin-left: 7%;
 }
