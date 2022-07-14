@@ -1,21 +1,14 @@
-var attempt = 3; 
+
 function validate(){
-var username = document.getElementById("usnfill").value;
-var password = document.getElementById("passfill").value;
-if ( username == "USN" && password == "123"){
+var username = document.getElementById("usn").value;
+var password = document.getElementById("password").value;
+if ( usn == "USN" && password == "123"){
 alert ("Login successfully");
-window.location = "./user.html"; 
+window.location.href="./user.html"
+document.login.submit();
 return false;
 }
 else{
-attempt --;
-alert("You have left "+attempt+" attempt;");
-
-if( attempt == 0){
-document.getElementById("usnfill").disabled = true;
-document.getElementById("passfill").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
+    alert('Login Failed');
 }
 }
