@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>User</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./main.css">
@@ -12,45 +12,69 @@
 
         
               
-        <form class="user-form">
+        <form class="user-form" method="post" name="user-form">
             <div class="title-pro">
                <img src="./images/user-logo.png" alt="logo" height="40px" width="40" style="margin-top:7% ;"> 
-                <h1>Student Profile</h1>
+              
+               <h1>Student Profile</h1>
+            
             </div>  
             <div class="pro-front">
                 <img src="./images/pro-front-img.png" alt="image">
             </div>
             <div class="left-four">
                 <label for="Maths">18MAT41</label><br>
-                <input type="text" id="marks-box-ex" name="maths" placeholder="Ext Marks"><br>
-                <input type="text" id="marks-box-ia" name="maths" placeholder="Int Marks"><br>
+                <input type="text" id="marks-box-ex" name="18MAT41" placeholder="Marks"><br>
+                
                 <label for="DAA">18CS42</label><br>
-                <input type="text" id="marks-box-ex" name="daa" placeholder="Ext Marks"><br>
-                <input type="text" id="marks-box-ia" name="daa" placeholder="Int Marks" ><br>
+                <input type="text" id="marks-box-ex" name="18CS42" placeholder="Marks"><br>
+               
                 <label for="OS">18CS43</label><br>
-                <input type="text" id="marks-box-ex" name="os" placeholder="Ext Marks"><br>
-                <input type="text" id="marks-box-ia" name="os" placeholder="Int Marks"><br>
+                <input type="text" id="marks-box-ex" name="18CS43" placeholder="Marks"><br>
+                
                 <label for="MES">18CS44</label><br>
-                <input type="text" id="marks-box-ex" name="mes" placeholder="Ext Marks"><br>
-               <input type="text" id="marks-box-ia" name="mes" placeholder="Int Marks"><br>
+                <input type="text" id="marks-box-ex" name="18CS44" placeholder="Marks"><br>
+               
              </div>
              <div class="right-four">
              <label for="OOC">18CS45</label><br>
-            <input type="text" id="marks-box-ex" name="ooc" placeholder="Ext Marks"><br>
-            <input type="text" id="marks-box-ia" name="ooc" placeholder="Int marks"><br>
+            <input type="text" id="marks-box-ex" name="18CS45" placeholder="Marks"><br>
+            
             <label for="DC">18MAT46</label><br>
-            <input type="text" id="marks-box-ex" name="dc" placeholder="Ext Marks"><br>
-            <input type="text" id="marks-box-ia" name="dc" placeholder="Int Marks"><br>
+            <input type="text" id="marks-box-ex" name="18CS46" placeholder="Marks"><br>
+            
             <label for="DAA LAB">18CSL47</label><br>
-            <input type="text" id="marks-box-ex" name="daa-lab" placeholder="Ext Marks"><br>
-            <input type="text" id="marks-box-ia" name="daa-lab" placeholder="Int Marks"><br>
+            <input type="text" id="marks-box-ex" name="18CSL47" placeholder="Marks"><br>
+            
             <label for="MES LAB">18CSL48</label><br>
-            <input type="text" id="marks-box-ex" name="mes-lab" placeholder="Ext Marks"><br>     
-            <input type="text" id="marks-box-ia" name="mes-lab" placeholder="Int Marks"><br>        
+            <input type="text" id="marks-box-ex" name="18CSL48" placeholder="Marks"><br>     
+                   
         </div>  
-           
+        <input type="submit" class="submit-form"  onclick="goto()" name="submit">
         </form>      
-        <button type="submit" class="submit-form">Submit</button>
+        <a href="./index.html"><button class="sub-cancle">Cancle</button></a>        
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzB82DIOFnWG3-uz3tFcYuyLuPOg6dK_Xf7Hu0GVqHcLajQlh3qmB8bJ5qE1TA7VbA/exec'
+            const form = document.forms['user-form']
+            form.addEventListener('submit', e =>{
+                e.preventDefault()
+                fetch(scriptURL,{method:'post',body:new FormData(form)})
+                .then(response=> alert("Logged In Enter your details"))
+                .catch(error => console.error("Error!",error.message))
+            })
+
+            function goto(){
+    setTimeout("location.href ='./index.html';",500);
+    
+  
+
+}
+    
+    
+            
+   
+        </script>   
         
     </body>
 </html>

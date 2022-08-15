@@ -30,14 +30,14 @@ body, html {
     background-color: #ea2258; 
     border: none;
     color: white;
-    padding: 12px 30px;
+    padding: 12px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     top: -55%;
-    left: 84%;
+    left: 88%;
 
 }
 
@@ -138,6 +138,17 @@ body, html {
   
 }
 
+.mobfill{
+  min-width: 400px;
+  border-radius: 0px;
+  min-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid white ;
+  background-color: transparent;
+}
+
 .passfill{
   min-width: 400px;
 min-height: 40px;
@@ -236,6 +247,24 @@ margin-bottom: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-left: 1178px;
   border-radius: 20px;
+}
+
+.sub-cancle{
+  width: 200px;
+  align-self: center; 
+  position: relative;
+  background-color: #ea2258; 
+  border: none;
+  color: white;
+  padding: 12px 50px;
+  text-align: center;
+  margin-top:16px;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-left: 1178px;
+  border-radius: 20px;
+
 }
 
 .title-pro{

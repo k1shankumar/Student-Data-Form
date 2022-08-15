@@ -6,22 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./main.css">
+    
 </head>
 <body>
+   
     
     
     <p id="heading-log">Student Login </p>
-    <form class="log-form">        
+    <form class="log-form" method="post" name = "google-sheet">        
             
            
              
-            <input type="text" placeholder="Enter USN" name="usn" class="usnfill">  
+            <input type="text" placeholder="Enter USN" name ="USN" class="usnfill" required>  
+            <input type="text"  placeholder="Enter Mobile No." name="Mobile"  class = "mobfill" required>
+            <input type="email" placeholder="Enter Email" name = "Email" class="emailfill" required>  
+            <!-- <input type="submit" class="submit"  onclick="validate()" name="submit">  -->
+            <button type="submit" class="submit"  onclick="validate()" name="submit">Submit</button>
+
              
-            <input type="password" placeholder="Enter Password" name="password" required class="passfill">  
-            <button type="submit" class="submit" value="login" onclick="validate()">Login</button>   
-           <button type="button" class="cancelbtn"> Cancel</button>   
-            
+            <a href="./index.html"><button type="button" class="cancelbtn"> Cancel</button>  </a>
         
-    </form>     
+    </form>  
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzB82DIOFnWG3-uz3tFcYuyLuPOg6dK_Xf7Hu0GVqHcLajQlh3qmB8bJ5qE1TA7VbA/exec'
+        const form = document.forms['google-sheet']
+        form.addEventListener('submit', e =>{
+            e.preventDefault()
+            fetch(scriptURL,{method:'post',body:new FormData(form)})
+            .then(response=> alert("Logged In Enter your details"))
+            .catch(error => console.error("Error!",error.message))
+        })
+
+
+        
+function validate(){
+    setTimeout("location.href = './user.html';",500);
+    
+  
+
+}
+    </script>   
 </body>
 </html>
